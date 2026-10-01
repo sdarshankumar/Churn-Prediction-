@@ -21,8 +21,8 @@ model = joblib.load(os.path.join(model_dir, "churn_model.pkl"))
 feature_columns = joblib.load(os.path.join(model_dir, "feature_columns.pkl"))
 
 st.set_page_config(page_title="Churn Risk Predictor", layout="centered")
-st.title("Customer Churn Risk Predictor")
-st.write("Enter a customer's profile to get a live churn probability.")
+st.title("✨ Customer Churn Risk Predictor")
+st.markdown("Enter a customer's profile below to get a **live churn probability**.")
 
 # ---------------------------------------------------------------------
 # Collect raw inputs (same fields as the original dataset)
